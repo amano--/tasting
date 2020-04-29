@@ -1,5 +1,28 @@
-[ 2020年初頭における Next.js をベースとしたフロントエンドの環境構築 ]( https://qiita.com/syuji-higa/items/931e44046c17f53b432b ) を参考にして構築した。
+[ 2020 年初頭における Next.js をベースとしたフロントエンドの環境構築 ](https://qiita.com/syuji-higa/items/931e44046c17f53b432b) を参考にして構築した。
 
+上記テンプレートをベースにして以下を追加した
+
+typeorm
+
+appolo
+
+ant design
+
+chakra UI
+
+[ aspida ](https://github.com/aspidajs/aspida)
+
+[ eslint-plugin-import ](https://github.com/benmosher/eslint-plugin-import)
+[ eslint-plugin-jsx-a11y ](https://github.com/evcohen/eslint-plugin-jsx-a11y)
+i
+jsx(tsx) にアクセシビリティのルールを追加
+
+npm install eslint-plugin-jsx-a11y --save-dev
+
+TypeORM がデコレーターを使用しているため、Babel に
+npm install --save-dev @babel/plugin-proposal-decorators
+
+以下、テンプレートに書かれたいた README の内容
 
 # Use
 
@@ -36,6 +59,7 @@ npm run start
 ```
 
 ## Storybook
+
 ```sh
 npm run storybook
 
@@ -44,6 +68,7 @@ npu run build-storybook
 ```
 
 ## Lint
+
 ```sh
 npm run lint
 
@@ -52,6 +77,7 @@ npm run lint -- --fix
 ```
 
 ## Test
+
 ```sh
 npm test
 
@@ -69,6 +95,7 @@ npm test -- --coverage
 ```
 
 ## Image Snapshot
+
 ```sh
 # image snapshot (run while storybook running)
 npm run puppeteer-storyshots

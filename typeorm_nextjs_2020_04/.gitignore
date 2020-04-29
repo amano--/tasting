@@ -21,6 +21,7 @@ src/__tests__/__image_snapshots__
 # misc
 .DS_Store
 .env*
+db
 
 # debug
 npm-debug.log*

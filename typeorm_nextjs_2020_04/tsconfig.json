@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,7 +22,8 @@
     "baseUrl": ".",
     "paths": {
       "~/*": [
-        "./src/*"
+        "./src/*",
+        "./auto/*"
       ]
     }
   },
