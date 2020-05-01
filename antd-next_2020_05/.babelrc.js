@@ -1,0 +1,9 @@
+module.exports = {
+  presets: ['next/babel'],
+  plugins: [
+    ['styled-components', { ssr: true, displayName: true, preprocess: false }],
+    ['inline-import', { extensions: ['.css'] }],
+    ['import', { libraryName: 'antd' }]
+    // ['import', { libraryName: 'antd', libraryDirectory: 'es', style: 'css' }]
+  ]
+}
