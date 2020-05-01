@@ -1,20 +1,13 @@
-/* eslint-disable import/no-cycle */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable react/button-has-type */
-
 /* eslint-disable jsx-a11y/label-has-associated-control */
-
 /* eslint-disable @typescript-eslint/no-unused-vars */
-
-/* eslint-disable no-console */
-
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
 import React from 'react'
 import styled from 'styled-components'
-// import settings from '../../components/settings/settings';import { LabeledRowProps } from './LabeledRow';
+import { LabeledRowProps } from './LabeledRow'
+// import settings from '../../components/settings/settings';
+
 // Types層
 export type GroupingRowProps = {
   label: React.FC

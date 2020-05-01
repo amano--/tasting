@@ -9,7 +9,9 @@ interface CustomDocumentInterface {
 
 class CustomDocument extends Document implements CustomDocumentInterface {
   url = 'https://example.com'
+
   title = 'Demo Next.js'
+
   description = 'Demo of Next.js'
 
   static async getInitialProps(ctx): Promise<any> {
@@ -55,7 +57,7 @@ class CustomDocument extends Document implements CustomDocumentInterface {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={this.title} />
           <meta name="twitter:description" content={this.description} />
-          <meta name="twitter:image" content={`${this.url}/ogp.png`}></meta>
+          <meta name="twitter:image" content={`${this.url}/ogp.png`} />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <link rel="manifest" href="/manifest.json" />

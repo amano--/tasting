@@ -1,8 +1,8 @@
 import * as React from 'react'
 import App, { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
-import { setupStore } from '~/store'
 import { ThemeProvider } from 'styled-components'
+import { setupStore } from '~/store'
 import 'sanitize.css'
 
 const store = setupStore()

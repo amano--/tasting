@@ -1,11 +1,15 @@
 module.exports = {
   ignorePatterns: ['!.eslintrc.js', '!.babelrc.js', '!.storybook/**/*.(js|ts)'],
   extends: [
+    'airbnb',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
     'plugin:prettier/recommended',
+    'prettier/react',
     'prettier/@typescript-eslint'
   ],
   plugins: ['@typescript-eslint', 'react'],
@@ -30,6 +34,24 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    // append by me
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'react/destructuring-assignment': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-filename-extension': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    // '': 'off',
+    // '': 'off',
+    // '': 'off',
+    // '': 'off',
+    // '': 'off',
+    // '': 'off',
+    // '': 'off',
+
+    'no-console': 'off'
   }
 }

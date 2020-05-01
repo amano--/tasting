@@ -2,25 +2,32 @@
 
 上記テンプレートをベースにして以下を追加した
 
-typeorm
-
 appolo
-
-ant design
 
 chakra UI
 
-[ aspida ](https://github.com/aspidajs/aspida)
+### ESLint に airbnb ルール を追加
+
+```sh
+npm i -D eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+```
 
 [ eslint-plugin-import ](https://github.com/benmosher/eslint-plugin-import)
-[ eslint-plugin-jsx-a11y ](https://github.com/evcohen/eslint-plugin-jsx-a11y)
-i
-jsx(tsx) にアクセシビリティのルールを追加
+[ eslint-plugin-jsx-a11y ](https://github.com/evcohen/eslint-plugin-jsx-a11y)i
 
-npm install eslint-plugin-jsx-a11y --save-dev
+### TypeORM を追加
 
 TypeORM がデコレーターを使用しているため、Babel に
+
+```sh
 npm install --save-dev @babel/plugin-proposal-decorators
+```
+
+### その他ライブラリ
+
+[ aspida ](https://github.com/aspidajs/aspida)
+
+[ formik yup ](https://github.com/jaredpalmer/formik)
 
 以下、テンプレートに書かれたいた README の内容
 

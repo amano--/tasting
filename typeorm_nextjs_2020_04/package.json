@@ -17,13 +17,20 @@
   "dependencies": {
     "@aspida/axios": "^0.4.7",
     "axios": "^0.19.2",
+    "formik": "^2.1.4",
     "next": "9.3.0",
     "pg": "^8.0.2",
     "react": "16.13.0",
     "react-dom": "16.13.0",
+    "react-redux": "^7.2.0",
+    "redux-logger": "^3.0.6",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^4.1.1",
-    "typeorm": "^0.2.24"
+    "styled-components": "^5.1.0",
+    "styled-media-query": "^2.1.2",
+    "sanitize.css": "^11.0.0",
+    "typeorm": "^0.2.24",
+    "yup": "^0.28.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -52,6 +59,7 @@
     "babel-loader": "^8.0.6",
     "babel-preset-react-app": "^9.1.1",
     "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -63,12 +71,7 @@
     "next-offline": "^5.0.0",
     "prettier": "^1.19.1",
     "puppeteer": "^2.1.1",
-    "react-redux": "^7.2.0",
     "react-test-renderer": "^16.13.0",
-    "redux-logger": "^3.0.6",
-    "sanitize.css": "^11.0.0",
-    "styled-components": "^5.0.1",
-    "styled-media-query": "^2.1.2",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   },

@@ -5,14 +5,14 @@ import {
   NotificationOutlined
 } from '@ant-design/icons'
 
-// import stylesheet from '~antd/dist/antd.min.css'
+import stylesheet from 'antd/dist/antd.min.css'
 
 const { SubMenu } = Menu
 const { Header, Content, Sider } = Layout
 
 const TopTemplate = (props) => (
   <Layout {...props}>
-    {/* <style dangerouslySetInnerHTML={{ __html: stylesheet }} /> */}
+    <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
     <style jsx>{`
       #components-layout-demo-top-side-2 .logo {
         width: 120px;
