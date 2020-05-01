@@ -1,5 +1,5 @@
 module.exports = {
-  input: 'auto/apis', // "input" of aspida is "output" for openapi2aspida
+  input: 'src/auto/apis', // "input" of aspida is "output" for openapi2aspida
   openapi: {
     inputFile: 'https://petstore.swagger.io/v2/swagger.json',
     mock: true

@@ -51,7 +51,20 @@ module.exports = {
     // '': 'off',
     // '': 'off',
     // '': 'off',
-
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*.test.ts',
+          '**/*.test.tsx',
+          'spec/**',
+          'test/**',
+          'tests/**',
+          '**/__tests__/**'
+        ],
+        optionalDependencies: false
+      }
+    ],
     'no-console': 'off'
   }
 }
