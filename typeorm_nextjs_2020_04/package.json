@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@aspida/axios": "^0.4.7",
+    "@reduxjs/toolkit": "^1.2.5",
     "axios": "^0.19.2",
     "formik": "^2.1.4",
     "next": "9.3.0",
@@ -36,7 +37,6 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-decorators": "^7.8.3",
-    "@reduxjs/toolkit": "^1.2.5",
     "@storybook/addon-actions": "^5.3.14",
     "@storybook/addon-backgrounds": "^5.3.14",
     "@storybook/addon-console": "^1.2.1",

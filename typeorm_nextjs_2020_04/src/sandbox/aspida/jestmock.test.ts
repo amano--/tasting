@@ -16,7 +16,9 @@ test('axios simple test', async () => {
     status: 'available'
   }
 
-  /* テストが通らんのでコメントアウト
+  // テストが通らんのでコメントアウト
+  // 「 TypeError: Cannot read property 'status' of undefined 」が発生
+  /*
 
   const mockedAxios = axios as jest.Mocked<typeof axios>
   mockedAxios.get.mockResolvedValue({
