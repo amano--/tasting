@@ -9,6 +9,7 @@
 下記情報をもとに設定を追加してみたが、うまくデザインが適用されなかった。
 
 [ next-with-antd ]( https://github.com/hanpama/next-with-antd )
+
 [ How to config Ant Design in Next.js with custom theme? ](https://medium.com/anna-coding/how-to-config-ant-design-in-next-js-with-custom-theme-b704022591af)
 
 

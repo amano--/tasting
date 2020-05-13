@@ -29,6 +29,9 @@ test('ProfileRegister usecase test', async () => {
   )
   expect(res1.address).toEqual(TdAddress.koukyo)
 
-  const res2 = usecase.reducer({}, usecase.actions.createGreetingMessage(res1))
+  const res2 = usecase.reducer(
+    res1,
+    usecase.actions.createGreetingMessage(res1)
+  )
   expect(res2.greetingMessage).toEqual('ようこそ東京へ')
 })
