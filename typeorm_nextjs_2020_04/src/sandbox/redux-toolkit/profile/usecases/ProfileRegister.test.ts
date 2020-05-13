@@ -1,33 +1,34 @@
-import { profileResister as usecase, TdAddress } from './ProfileRegister'
+import { profileResister as usecase } from './ProfileRegister'
+import { SampleAddress } from './SampleData'
 
 test('ProfileRegister#inputZipcode', async () => {
   expect(
     usecase.reducer(
       {},
       usecase.actions.inputZipcode({
-        address: { zipCode: TdAddress.koukyo.zipCode }
+        address: { zipCode: SampleAddress.koukyo.zipCode }
       })
     )
-  ).toEqual({ address: TdAddress.koukyo })
+  ).toEqual({ address: SampleAddress.koukyo })
 
   expect(
     usecase.reducer(
       {},
       usecase.actions.inputZipcode({
-        address: { zipCode: TdAddress.tokyoTower.zipCode }
+        address: { zipCode: SampleAddress.tokyoTower.zipCode }
       })
     )
-  ).toEqual({ address: TdAddress.tokyoTower })
+  ).toEqual({ address: SampleAddress.tokyoTower })
 })
 
 test('ProfileRegister usecase test', async () => {
   const res1 = usecase.reducer(
     {},
     usecase.actions.inputZipcode({
-      address: { zipCode: TdAddress.koukyo.zipCode }
+      address: { zipCode: SampleAddress.koukyo.zipCode }
     })
   )
-  expect(res1.address).toEqual(TdAddress.koukyo)
+  expect(res1.address).toEqual(SampleAddress.koukyo)
 
   const res2 = usecase.reducer(
     res1,

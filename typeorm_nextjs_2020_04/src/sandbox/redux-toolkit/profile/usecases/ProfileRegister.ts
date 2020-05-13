@@ -5,21 +5,22 @@ import {
   CaseReducer,
   configureStore
 } from '@reduxjs/toolkit'
-import { Profile, Address, TdAddress, PrefDivs } from './domain'
+import { Profile, Address, PrefDivs } from '../domain/Profile'
+import { SampleAddress } from './SampleData'
 
 const name = 'profile/resister'
 type State = Partial<{ greetingMessage: string } & Profile>
 
 function findAddressByZipcode(zipCode: string): Address {
   switch (zipCode) {
-    case TdAddress.koukyo.zipCode:
-      return TdAddress.koukyo
+    case SampleAddress.koukyo.zipCode:
+      return SampleAddress.koukyo
 
-    case TdAddress.tokyoTower.zipCode:
-      return TdAddress.tokyoTower
+    case SampleAddress.tokyoTower.zipCode:
+      return SampleAddress.tokyoTower
 
     default:
-      return TdAddress.koukyo
+      return SampleAddress.koukyo
   }
 }
 
@@ -56,7 +57,7 @@ export const createGreetingMessage: CaseReducer<State, PayloadAction<State>> = (
 
 const initialState: State = {
   name: 'init',
-  address: TdAddress.blank
+  address: SampleAddress.blank
 }
 
 export const profileResister = createSlice({

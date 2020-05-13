@@ -1,32 +1,9 @@
-type ZipCode = {
-  zipCode: string
-}
-
-export type PrefDiv = {
-  divType: 'PrefDiv'
-  divCode: number
-  prefName: string
-}
-
-export const PrefDivs = {
-  tokyo: {
-    divType: 'PrefDiv',
-    divCode: 10,
-    prefName: '東京都'
-  },
-  ohsaka: {
-    divType: 'PrefDiv',
-    divCode: 20,
-    prefName: '大阪府'
-  }
-} as const
-
-export type PrefDivType = typeof PrefDivs[keyof typeof PrefDivs]
+import { PrefDivs } from '../domain/Profile'
 
 // 〒100-8111 東京都千代田区千代田１−１
 // 〒105-0011 東京都港区芝公園４丁目２−８
 // 〒556-0002 大阪府大阪市浪速区恵美須東１丁目１８−６
-export const TdAddress = {
+export const SampleAddress = {
   blank: {
     zipCode: '',
     pref: PrefDivs.tokyo,
@@ -48,14 +25,3 @@ export const TdAddress = {
     address1: '大阪府大阪市浪速区恵美須東１丁目１８−６'
   }
 } as const
-
-export type Address = {
-  zipCode: string
-  pref: PrefDiv
-  address1: string
-}
-
-export type Profile = Partial<{
-  name: string
-  address: Address
-}>
