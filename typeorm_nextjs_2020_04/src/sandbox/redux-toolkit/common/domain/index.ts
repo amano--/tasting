@@ -5,7 +5,7 @@ export type Label = {
   text: string
 }
 
-export type Account = {
+export type DisplayProfile = {
   loginId: string
   email: string
 }

@@ -3,9 +3,17 @@
     {
       "path": "."
     },
+  
     {
+      "path": "../tailwind-react-next.js-typescript-eslint-jest-starter"
+    },
+  {
+      "path": "../../git_sandbox"
+    },	{
       "path": "../../texts"
-    }
+    },
+
+	
   ],
   "settings": {}
 }

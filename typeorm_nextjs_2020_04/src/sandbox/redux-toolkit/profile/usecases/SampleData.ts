@@ -1,4 +1,4 @@
-import { PrefDivs } from '../domain/Profile'
+import { PrefDivs } from '../domain'
 
 // 〒100-8111 東京都千代田区千代田１−１
 // 〒105-0011 東京都港区芝公園４丁目２−８

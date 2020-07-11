@@ -1,20 +1,14 @@
-import { Account } from './Account'
+import { Label, DisplayProfile } from '../../common/domain'
 
 export type ZipCode = {
   zipCode: string
-}
-
-export type SupportLang = 'en' | 'ja'
-
-export type Label = {
-  lang: SupportLang
-  text: string
 }
 
 export type PrefDiv = {
   divType: 'PrefDiv'
   divCode: number
   uname: string
+  label: Label
 }
 
 export const PrefDivs = {
@@ -63,7 +57,7 @@ export type Address = {
   address1: string
 }
 
-export type Profile = Account & {
+export type Profile = DisplayProfile & {
   name: string
   address: Address
 }

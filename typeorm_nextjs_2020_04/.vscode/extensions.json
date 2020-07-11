@@ -1,5 +1,7 @@
 {
   "recommendations": [
+    "hediet.vscode-drawio",
+    "gruntfuggly.todo-tree",
     "mhutchie.git-graph",
     "aaron-bond.better-comments",
     "CoenraadS.bracket-pair-colorizer",

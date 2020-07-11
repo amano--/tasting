@@ -5,7 +5,7 @@ import {
   CaseReducer,
   configureStore
 } from '@reduxjs/toolkit'
-import { Profile, Address, PrefDivs } from '../domain/Profile'
+import { Profile, Address, PrefDivs } from '../domain'
 import { SampleAddress } from './SampleData'
 
 const name = 'profile/resister'
