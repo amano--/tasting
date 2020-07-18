@@ -4,17 +4,25 @@ import Link from 'next/link'
 const Index = (props) => (
   <>
     <hr />
-    [ Ant Design ] ( https://ant.design/ )
-    <hr />
-    <Link href="sandbox/antd/TopTemplate">
-      <a>TopTemplate</a>
-    </Link>
-    <hr />
-    [ Ant Design ] ( https://ant.design/ )
+    React
     <hr />
     <Link href="sandbox/concurrent">
       <a>React concurrent</a>
     </Link>
+
+    {/* 
+    <hr />
+    <hr />
+    <Link href="sandbox/concurrent">
+      <a></a>
+    </Link>
+    
+    <hr />
+    <hr />
+    <Link href="sandbox/concurrent">
+      <a></a>
+    </Link> 
+    */}
   </>
 )
 

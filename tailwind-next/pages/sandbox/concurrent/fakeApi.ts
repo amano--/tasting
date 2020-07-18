@@ -2,9 +2,11 @@
 // a contract like this to integrate with React.
 // Real implementations can be significantly more complex.
 // Don't copy-paste this into your project!
+
 function wrapPromise(promise) {
   let status = 'pending'
   let result
+
   const suspender = promise.then(
     (r) => {
       status = 'success'
@@ -13,8 +15,9 @@ function wrapPromise(promise) {
     (e) => {
       status = 'error'
       result = e
-    }
+    },
   )
+
   return {
     read() {
       if (status === 'pending') {
@@ -24,11 +27,18 @@ function wrapPromise(promise) {
       } else if (status === 'success') {
         return result
       }
-    }
+    },
   }
 }
 
-export function fetchUser(userId) {
+type User = { id?: number; name: string }
+
+type Post = {
+  id: number
+  text: string
+}
+
+export async function fetchUser(userId: number): Promise<User> {
   console.log(`fetch user ${userId}...`)
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -36,114 +46,117 @@ export function fetchUser(userId) {
       switch (userId) {
         case 0:
           resolve({
-            name: 'Ringo Starr'
+            name: 'Ringo Starr',
           })
           break
         case 1:
           resolve({
-            name: 'George Harrison'
+            name: 'George Harrison',
           })
           break
         case 2:
           resolve({
-            name: 'John Lennon'
+            name: 'John Lennon',
           })
           break
         case 3:
           resolve({
-            name: 'Paul McCartney'
+            name: 'Paul McCartney',
           })
           break
         default:
           throw Error('Unknown user.')
       }
-    }, 2000 * Math.random())
+    }, 2500 * Math.random())
   })
 }
 
-export function fetchPosts(userId) {
+export async function fetchPosts(userId: number): Promise<ReadonlyArray<Post>> {
   console.log(`fetch posts for ${userId}...`)
+
   return new Promise((resolve) => {
     setTimeout(() => {
       console.log(`fetched posts for ${userId}`)
+
       switch (userId) {
         case 0:
           resolve([
             {
               id: 0,
-              text: 'I get by with a little help from my friends'
+              text: 'I get by with a little help from my friends',
             },
             {
               id: 1,
-              text: "I'd like to be under the sea in an octupus's garden"
+              text: "I'd like to be under the sea in an octupus's garden",
             },
             {
               id: 2,
-              text: 'You got that sand all over your feet'
-            }
+              text: 'You got that sand all over your feet',
+            },
           ])
           break
         case 1:
           resolve([
             {
               id: 0,
-              text: 'Turn off your mind, relax, and float downstream'
+              text: 'Turn off your mind, relax, and float downstream',
             },
             {
               id: 1,
-              text: 'All things must pass'
+              text: 'All things must pass',
             },
             {
               id: 2,
-              text: "I look at the world and I notice it's turning"
-            }
+              text: "I look at the world and I notice it's turning",
+            },
           ])
           break
         case 2:
           resolve([
             {
               id: 0,
-              text: 'Living is easy with eyes closed'
+              text: 'Living is easy with eyes closed',
             },
             {
               id: 1,
-              text: "Nothing's gonna change my world"
+              text: "Nothing's gonna change my world",
             },
             {
               id: 2,
-              text: 'I am the walrus'
-            }
+              text: 'I am the walrus',
+            },
           ])
           break
         case 3:
           resolve([
             {
               id: 0,
-              text: 'Woke up, fell out of bed'
+              text: 'Woke up, fell out of bed',
             },
             {
               id: 1,
-              text: 'Here, there, and everywhere'
+              text: 'Here, there, and everywhere',
             },
             {
               id: 2,
-              text: 'Two of us sending postcards, writing letters'
-            }
+              text: 'Two of us sending postcards, writing letters',
+            },
           ])
           break
         default:
           throw Error('Unknown user.')
       }
-    }, 2000 * Math.random())
+    }, 6000 * Math.random())
   })
 }
 
-export function fetchProfileData(userId) {
+export function fetchProfileData(userId: number) {
   const userPromise = fetchUser(userId)
   const postsPromise = fetchPosts(userId)
+
   return {
     userId,
     user: wrapPromise(userPromise),
-    posts: wrapPromise(postsPromise)
+    posts: wrapPromise(postsPromise),
   }
 }
