@@ -9,6 +9,12 @@ const Index = (props) => (
     <Link href="sandbox/antd/TopTemplate">
       <a>TopTemplate</a>
     </Link>
+    <hr />
+    [ Ant Design ] ( https://ant.design/ )
+    <hr />
+    <Link href="sandbox/concurrent">
+      <a>React concurrent</a>
+    </Link>
   </>
 )
 

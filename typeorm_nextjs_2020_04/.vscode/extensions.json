@@ -20,6 +20,8 @@
     "pmneo.tsimporter",
     "shd101wyy.markdown-preview-enhanced",
     "ionutvmi.path-autocomplete",
-    "stringham.move-ts"
+    "stringham.move-ts",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense"
   ]
 }

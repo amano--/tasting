@@ -20,7 +20,8 @@
     "react": "0.0.0-experimental-4c8c98ab9",
     "react-dom": "0.0.0-experimental-4c8c98ab9",
     "react-error-boundary": "^2.2.3",
-    "react-icons": "^3.10.0"
+    "react-icons": "^3.10.0",
+    "typescript": "^3.9.7"
   },
   "devDependencies": {
     "husky": "^4.2.5",
