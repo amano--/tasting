@@ -3,6 +3,8 @@ import { render, fireEvent } from '@testing-library/react'
 import { savePost as mockSavePost } from './api'
 import { Editor } from './post-editor-03-api'
 
+const DEBUG = process.env.NODE_ENV === 'test'
+
 jest.mock('./api')
 
 afterEach(() => {
@@ -13,6 +15,8 @@ test('renders a form with title, content, tags, and a submit button', () => {
   mockSavePost.mockResolvedValueOnce()
 
   // mocked(mockSavePost).mockImplementation(mockResolvedValueOnce())
+
+  if (DEBUG) console.log('process.env=', process.env)
 
   const fakeUser = { id: 'user-1' }
   const { getByLabelText, getByText } = render(<Editor user={fakeUser} />)

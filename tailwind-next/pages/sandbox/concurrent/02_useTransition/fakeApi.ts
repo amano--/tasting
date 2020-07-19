@@ -38,8 +38,9 @@ type Post = {
   text: string
 }
 
-export async function fetchUser(userId: number): Promise<User> {
+export function fetchUser(userId: number): Promise<User> {
   console.log(`fetch user ${userId}...`)
+
   return new Promise((resolve) => {
     setTimeout(() => {
       console.log(`fetched user ${userId}`)
@@ -71,7 +72,7 @@ export async function fetchUser(userId: number): Promise<User> {
   })
 }
 
-export async function fetchPosts(userId: number): Promise<ReadonlyArray<Post>> {
+export function fetchPosts(userId: number): Promise<ReadonlyArray<Post>> {
   console.log(`fetch posts for ${userId}...`)
 
   return new Promise((resolve) => {
