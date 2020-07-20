@@ -1,11 +1,14 @@
 {
-  "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "../../now/texts"
-	}
-],
-  "settings": {}
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../now/research"
+		},
+		{
+			"path": "../../now/texts"
+		}
+	],
+	"settings": {}
 }
