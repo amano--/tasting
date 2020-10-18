@@ -1,3 +1,10 @@
+
+
+[ nextjs-starter-kit ]( https://github.com/KushibikiMashu/nextjs-starter-kit ) をベースに、React Spectrum と Material-UI を 比較検証したもの 
+
+
+以下は nextjs-starter-kit のREADME
+
 # Next.js Starter Kit
 ![test and build](https://github.com/KushibikiMashu/nextjs-starter-kit/workflows/test%20and%20build/badge.svg)
 
