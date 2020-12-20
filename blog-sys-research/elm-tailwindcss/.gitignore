@@ -1,0 +1,11 @@
+.cache
+dist
+out
+.next
+node_modules
+amdxg.config
+gen/*
+!.gitkeep
+
+elm-stuff
+.DS_Store
