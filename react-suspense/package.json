@@ -17,7 +17,7 @@
     "@testing-library/react": "^10.4.7",
     "chalk": "^4.1.0",
     "codegen.macro": "^4.0.0",
-    "react": "0.0.0-experimental-4c8c98ab9",
+    "react": "0.14.0",
     "react-dom": "0.0.0-experimental-4c8c98ab9",
     "react-error-boundary": "^2.2.3",
     "react-icons": "^3.10.0",
