@@ -25,6 +25,7 @@
     "@aspida/fetch": "^1.2.1",
     "@aspida/node-fetch": "^1.2.1",
     "@aspida/swr": "^1.2.1",
+    "@types/json-schema": "^7.0.7",
     "class-validator": "^0.12.2",
     "next": "^10.0.5",
     "react": "^17.0.1",

@@ -1,3 +1,25 @@
 {
-  "recommendations": ["dbaeumer.vscode-eslint", "prisma.prisma"]
-}
+    "recommendations": [
+      "aaron-bond.better-comments",
+      "CoenraadS.bracket-pair-colorizer",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "hex-ci.stylelint-plus",
+      "jpoissonnier.vscode-styled-components",
+      "mechatroner.rainbow-csv",
+      "mikestead.dotenv",
+      "oderwat.indent-rainbow",
+      "Orta.vscode-jest",
+      "vincaslt.highlight-matching-tag",
+      "VisualStudioExptTeam.vscodeintellicode",
+      "vscode-icons-team.vscode-icons",
+
+      "mike-co.import-sorter",
+      "pmneo.tsimporter",
+      "shd101wyy.markdown-preview-enhanced",
+      "ionutvmi.path-autocomplete",
+      "stringham.move-ts",
+
+      "dbaeumer.vscode-eslint", "prisma.prisma"
+    ]
+  }
