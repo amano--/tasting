@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots spectrum/buttons/Button Default 1`] = `
+<button
+  aria-label="ボタンのラベル"
+  className="_spectrum-Button_7a745 _spectrum-Button--primary_7a745"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragStart={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchCancel={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  style={Object {}}
+  type="button"
+>
+  <span
+    className="_spectrum-Button-label_7a745"
+    style={Object {}}
+  >
+    Button
+  </span>
+</button>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots examples/Example Default 1`] = `
+<div>
+  <p>
+    abbb
+  </p>
+  <p>
+    abbb
+  </p>
+</div>
+`;

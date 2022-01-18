@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots chakra/buttons/Button Default 1`] = `
+<button
+  aria-label="ボタンのラベル"
+  className="chakra-button css-5c2176"
+  type="button"
+>
+  Button
+</button>
+`;

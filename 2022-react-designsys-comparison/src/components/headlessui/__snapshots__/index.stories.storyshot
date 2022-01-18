@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots headlessui/buttons/MyToggle Default 1`] = `
+<button
+  aria-checked={false}
+  className="bg-gray-200 relative inline-flex items-center h-6 rounded-full w-11"
+  id="headlessui-switch-1"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  onKeyUp={[Function]}
+  role="switch"
+  tabIndex={0}
+>
+  <span
+    className="sr-only"
+  >
+    Enable notifications
+  </span>
+  <span
+    className="translate-x-1 inline-block w-4 h-4 transform bg-white rounded-full"
+  />
+</button>
+`;
