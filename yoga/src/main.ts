@@ -1,9 +1,10 @@
 import { execute, parse } from "graphql";
 import { schema } from "./schema";
 import { createServer } from "@graphql-yoga/node";
+import { createContext } from "./context";
 
 async function startServer() {
-  const server = createServer({ schema });
+  const server = createServer({ schema, context: createContext });
   await server.start();
 }
 
