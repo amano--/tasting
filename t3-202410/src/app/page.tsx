@@ -9,7 +9,18 @@ export default async function Home() {
   const session = await getServerAuthSession();
 
   void api.post.getLatest.prefetch();
-
+  const mergeColors = <const T extends Record<string, string>>(
+    colors: T
+  ): T & { green: "#00ff00" } => {
+    return {
+      ...colors,
+      green: "#00ff00",
+    };
+  };
+  
+  const colors = mergeColors({ red: "#ff0000" });
+  colors.
+  
   return (
     <HydrateClient>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
